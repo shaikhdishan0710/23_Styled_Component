@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+}
+
+/* Vertical menu alignment */ 
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+/* Header alignment */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: white;
+}
+
+/* Stats section */
+.stats {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Equal width cards */
+.card {
+  flex: 1;
+  background: #e0f2fe;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Split layout */
+.split {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.large { flex: 3; }
+.small { flex: 1; }
+
+/* Departments */
+.departments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.dept {
+  flex: 1 1 200px;
+  background: #c7d2fe;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .split {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+}
